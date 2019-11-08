@@ -33,14 +33,8 @@ int main () {
   double *pf = arreglo_final;
   escribirTxt(pf, filename);
     
-    
-  //delete arreglos
-  delete []arreglo_x;
-  delete []arreglo_y;
-  delete []arreglo_final;
   return 0;
 }
-
 
 /*
 Lee un archivo de texto de nombre filename y escribe su contenido
@@ -61,7 +55,6 @@ void leerTxt(double *punteroArreglo,string filename){
 
   infile.close();
 }
-
 
 /*
 Escribe el contenido de un arreglo cuya primera posición es
